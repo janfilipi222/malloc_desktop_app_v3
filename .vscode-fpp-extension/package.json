@@ -1,0 +1,27 @@
+{
+  "name": "fpp-local",
+  "displayName": "FPP Local Syntax",
+  "description": "Local syntax highlighting for .fpp files",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.70.0" 
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "fpp",
+        "aliases": ["FPP"],
+        "extensions": [".fpp"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "fpp",
+        "scopeName": "source.fpp",
+        "path": "./syntaxes/fpp.tmLanguage.json"
+      }
+    ]
+  }
+}
