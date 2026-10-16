@@ -765,6 +765,7 @@ class CommandClient:
 
     def _handle_4DoF_Move(self, x: float, y: float, z: float, pitch: float, time_ms: float, seq: int):
         print("4dof")
+
         
         a, b, c, d = IK.calculate_4DoF_IK([x, y, z], pitch, self.joints)
         steps = [a, b, c, 0, d, 0]

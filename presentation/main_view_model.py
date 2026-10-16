@@ -246,6 +246,7 @@ class MainViewModel:
         trajectory[0].y = y
         trajectory[0].z = z
 
+
         # print("current:", self.arm_model.ee_position)
         # print("target:", self.arm_model.target_ee_position)
 
